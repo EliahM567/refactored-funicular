@@ -1,0 +1,82 @@
+header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px 30px;
+        color: white ;
+        background-color: black;
+        font-family: Helvetica;
+      }
+
+header img {
+    height: 120px;
+    width: auto;
+    margin-bottom: 1px;
+}
+
+header h1 {
+        margin: 0;
+        font-size: 38px;
+        text-align: left;
+      }
+
+img {
+    height: 250px;
+    width: auto;
+    padding: 20px;
+    margin: auto;
+}
+
+.hover-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+}
+
+.hover-image img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hover-img {
+    opacity: 0;
+}
+
+.hover-image:hover .hover-img {
+    opacity: 1;
+}
+
+.hover-image:hover .default-img {
+    opacity: 0;
+}
+
+.hover-image img {
+    transition: opacity 0.3s ease;
+}
+
+.custom-btn {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.custom-btn:hover {
+    background-color: rgb(119, 7, 7);
+    color: white;
+}
+
+.submit-btn {
+    background-color: white;
+    color: rgb(88, 88, 88);
+    border: none;
+}
+
+.submit-btn:hover {
+    background-color: rgb(119, 7, 7);
+    color: white;
+}
